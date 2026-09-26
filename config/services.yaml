@@ -1,0 +1,37 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Factotum\StructuredDataImportBundle\Controller\: 
+        resource: '../src/Controller'
+        public: true
+        tags: [ 'controller.service_arguments' ]
+
+    Factotum\StructuredDataImportBundle\Installer:
+        public: true
+
+    Factotum\StructuredDataImportBundle\EventSubscriber\AdminAssetSubscriber: ~
+
+    Factotum\StructuredDataImportBundle\Data\Builder\StructuredDataBuilder: ~
+
+    Factotum\StructuredDataImportBundle\Data\Builder\:
+        resource: '../src/Data/Builder/*Builder.php'
+        tags:
+            - { name: 'structured.data.builder' }
+
+    data_builder_factory:
+        alias: Factotum\StructuredDataImportBundle\Data\Builder\Factory\StructuredDataBuilderFactory
+
+    Factotum\StructuredDataImportBundle\Data\Builder\Factory\StructuredDataBuilderFactory:
+        arguments:
+            $builders: !tagged_iterator structured.data.builder
+
+    Factotum\StructuredDataImportBundle\Mapping\DataTarget\Structured:
+        tags:
+            - { name: "pimcore.datahub.data_importer.data_target", type: "structured" }
+        calls:
+        -   setStructuredDataBuilderFactory: ['@data_builder_factory']
+
+    Factotum\StructuredDataImportBundle\Mapping\Type\TransformationStructuredDataTypeService: ~

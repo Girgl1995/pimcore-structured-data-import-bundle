@@ -1,0 +1,34 @@
+{
+  "name": "factotum/structured-data-import-bundle",
+  "description": "Extends the Pimcore Data Importer with support for importing data into Pimcore `Table` and `Structured Table` data types",
+  "type": "pimcore-bundle",
+  "keywords": [
+    "pimcore",
+    "pimcore-bundle",
+    "data-hub",
+    "data-importer",
+    "import",
+    "structured-table",
+    "table",
+    "factotum",
+    "open-source",
+    "girgl"
+  ],
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Girgl1995",
+      "email": "girgl1995@proton.me",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "pimcore/pimcore": "^11.0",
+    "pimcore/data-importer": "^1.10.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Factotum\\StructuredDataImportBundle\\": "src/"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured: Structured
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_label: Overwrite
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_ifSourceIsEmpty: If source is empty
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_ifTargetIsNotEmpty: If target is not empty
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_overwriteMode: Overwrite mode
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_overwriteMode_replace: Replace existing data
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_overwriteMode_merge: Merge import with existing data
+plugin_pimcore_datahub_data_importer_configpanel_structured_type_error: Type not supported for Structured.
+plugin_pimcore_datahub_data_importer_configpanel_structured_type: Make sure transformation results in a 'array'.
+index_out_of_bounds_exception_message: "The required row index for the data to be imported exceeds the maximum defined number rows for table: %s. This limit cannot be exceeded because the table has a fixed number of rows."
+insufficient_table_space_exception_message: "The available storage space in table: %s is insufficient to import the requested data."
