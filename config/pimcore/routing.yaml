@@ -1,0 +1,3 @@
+structured_import:
+    resource: "../../src/Controller/"
+    type: attribute

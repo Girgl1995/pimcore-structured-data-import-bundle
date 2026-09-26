@@ -1,0 +1,11 @@
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured: Strukturiert
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_label: "\xDCberschreiben"
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_ifSourceIsEmpty: Wenn die Quelle leer ist
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_ifTargetIsNotEmpty: Wenn das Ziel nicht leer ist
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_overwriteMode: "\xDCberschreibmodus"
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_overwriteMode_replace: Vorhandene Daten ersetzen
+plugin_pimcore_datahub_data_importer_configpanel_dataTarget.type_structured_write_settings_overwriteMode_merge: "Import mit vorhandenen Daten zusammenf\xFChren"
+plugin_pimcore_datahub_data_importer_configpanel_structured_type_error: "Typ wird f\xFCr 'Strukturiert' nicht unterst\xFCtzt."
+plugin_pimcore_datahub_data_importer_configpanel_structured_type: "Stellen Sie sicher, dass das Ergebnis der Transformation ein 'Array' ist."
+index_out_of_bounds_exception_message: "Der f\xFCr die zu importierenden Daten erforderliche Zeilenindex \xFCberschreitet die maximal definierte Anzahl an Zeilen f\xFCr die Tabelle: %s. Dieses Limit kann nicht \xFCberschritten werden, da die Tabelle eine feste Anzahl an Zeilen hat."
+insufficient_table_space_exception_message: "Der verf\xFCgbare Speicherplatz in der Tabelle: %s reicht nicht aus, um die angeforderten Daten zu importieren."
